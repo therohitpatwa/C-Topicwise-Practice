@@ -1,7 +1,8 @@
 #include<stdio.h>
 void main()
 {
-  
-   printf("%d",sizeof(long));
+   char str[30];
+   scanf("%[^\n]%*c",str);
+   printf("%s",str);
 
 }
