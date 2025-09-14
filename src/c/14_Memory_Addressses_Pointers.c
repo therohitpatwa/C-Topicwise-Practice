@@ -23,11 +23,12 @@ int pointers(){
 }
 
 int nd_pointer_arrays(){
-    int **nums[2][2] = {{1,2}, {3,4}};
-    for(int i = 0; i < sizeof(*nums)/4; i++){
-        for (int j = 0; j < sizeof(**nums)/4; j++)
+    int nums[2][2] = {{1,2}, {3,4}};
+    int (*num)[2][2]=&nums;
+    for(int i = 0; i < 2; i++){
+        for (int j = 0; j < 2; j++)
         {
-            printf("elements are : %d", **nums[i][j]);
+            printf("elements are : %d ", (*num)[i][j]);
         }
         printf("\n");
     }

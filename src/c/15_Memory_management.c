@@ -31,23 +31,6 @@ int main(){
     // free(ptr);
 
     ptr1 = (char*)realloc(ptr1, 10*sizeof(char));
-    
-    // initialise 2d pointers
-
-    int *data = (int *)malloc(4 * 4 * sizeof(int));
-    int **array2D = (int **)malloc(4 * sizeof(int *));
-    
-    for (int i = 0; i < 4; i++) {
-        array2D[i] = &data[i * 4];
-    }
-
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 4; j++) {
-            array2D[i][j] = i * j;
-        }
-    }
-    free(array2D);
-    free(data);
 
     
     return 0;

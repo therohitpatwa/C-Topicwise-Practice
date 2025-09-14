@@ -9,13 +9,13 @@ int main(int argc, char const *argv[])
     - normal addition, printf() with different numbers
     */
 
-   printf("%f\n", 5+4);
-   printf("%f\n", 5+4.0);
-   printf("%f\n", 5/4);
-   printf("%f\n", 5/4.0);
-   printf("%f\n", 5.0/4);
-   printf("%0.2f\n", (float)5/4);
-   printf("%f",10.0/0);
+   printf("%d\n", 5+4);
+//    printf("%f\n", 5+4.0);
+//    printf("%f\n", 5/4);
+//    printf("%f\n", 5/4.0);
+//    printf("%f\n", 5.0/4);
+//    printf("%0.2f\n", (float)5/4);
+//    printf("%f",10.0/0);
 
 
     /*
